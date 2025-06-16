@@ -28,3 +28,26 @@
   text-decoration: none; /* Remove underline*/
   color: inherit; /* Keep color*/
 }
+
+#school { /* Use # for id*/
+  max-height: 300px;
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.Project {
+  text-align: center;
+}
+.project_pictures {
+  display:flex;
+  justify-content: center;
+  gap: 20px;
+}
+.project_block img{
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  object-fit: cover;
+}
