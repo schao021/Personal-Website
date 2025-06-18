@@ -1,58 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Progress Tracker of Simon Chao</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Scales the website-->
+    <title>Simon Chao - Data Analyst Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="Main_Title">Simon Chao</div>
-    <hr> <!--Gives a straight line-->
-    
-    <div class="Profile">
-        <a href="https://www.youtube.com/" target="_blank">
-            <img src="Images/Portfolio.png">
-            <p>Portfolio</p>
-        </a>
-        <a href="https://www.google.com/" target="_blank">
-            <img src="Images/ResumeLogo.png">
-            <p>Resume</p>
-        </a>
-        <a href="https://www.target.com/" target="_blank">
-            <img src="Images/AboutIcon.png">
-            <p>About</p>
-        </a>
-        <a href="https://www.walmart.com/" target="_blank">
-            <img src="Images/ContactIcon.webp">
-            <p>Contact</p>
-        </a>
-    </div>
-    <img id="school" src="Images/UCR.avif">
-    <div class="Project">
-        <h2>Projects</h2>
-        <div class="project_pictures">
-            <div class="project_block">
-                <a href="https://github.com/schao021/Spotify_Analysis" target="_blank">
-                    <img src="Images/SpotifyIcon.png">
-                </a>
-            </div>
-            <div class="project_block">
-                <a href="https://github.com/schao021/NBA_Award_Trends_and_Predictor" target="_blank">
-                    <img src="Images/Kobe-Bryant-Dwight-Howard.jpg">
-                </a>
-            </div>
-        </div>
+    <div class="container">
+        <h1 class="main-title">Simon Chao</h1>
+        <p class="subtitle">Data Analyst | Computer Science Graduate | UC Riverside</p>
         
+        <hr class="divider">
+        
+        <nav class="navigation"> <!-- This is used for navigation purposes-->
+            <a href="#portfolio" class="nav-item">
+                <div class="nav-icon">P</div>
+                <span>Portfolio</span> <!-- Span is for inline text and does not start in new line-->
+            </a>
+            <a href="#resume" class="nav-item">
+                <div class="nav-icon">R</div>
+                <span>Resume</span>
+            </a>
+            <a href="#about" class="nav-item">
+                <div class="nav-icon">A</div>
+                <span>About</span>
+            </a>
+            <a href="#contact" class="nav-item">
+                <div class="nav-icon">C</div>
+                <span>Contact</span>
+            </a>
+        </nav>
+
+        <section class="school-section"> > <!-- Section is ued for standalone seciton-->
+            <div class="education-info">
+                <h3>University of California, Riverside</h3>
+                <p><strong>Bachelor of Science in Computer Science</strong></p>
+                <p>Specializing in Data Analysis and Machine Learning</p>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h4>Programming</h4>
+                    <p>Python, SQL, JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <h4>Data Analysis</h4>
+                    <p>Pandas, NumPy, Matplotlib</p>
+                </div>
+                <div class="skill-item">
+                    <h4>Machine Learning</h4>
+                    <p>Scikit-learn, TensorFlow</p>
+                </div>
+                <div class="skill-item">
+                    <h4>Visualization</h4>
+                    <p>Tableau, Power BI</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image spotify-bg">
+                        🎵 Spotify
+                    </div>
+                    <h3 class="project-title">Spotify Music Analysis</h3>
+                    <p class="project-description">
+                        Comprehensive analysis of Spotify listening data using Python and data visualization techniques to uncover music preferences and listening patterns.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Matplotlib</span>
+                        <span class="tag">Data Viz</span>
+                    </div>
+                    <a href="https://github.com/schao021/Spotify_Analysis" target="_blank" class="project-link">
+                        View Project →
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image nba-bg">
+                        🏀 NBA
+                    </div>
+                    <h3 class="project-title">NBA Award Predictor</h3>
+                    <p class="project-description">
+                        Machine learning model to predict NBA awards and analyze historical trends using statistical analysis and predictive modeling techniques.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">ML</span>
+                        <span class="tag">Statistics</span>
+                        <span class="tag">Prediction</span>
+                    </div>
+                    <a href="https://github.com/schao021/NBA_Award_Trends_and_Predictor" target="_blank" class="project-link">
+                        View Project →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="social-links">
+            <a href="https://github.com/schao021" target="_blank" class="social-link">
+                <div class="social-icon">G</div>
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/simon-chao-8b4869223" target="_blank" class="social-link">
+                <div class="social-icon">L</div>
+                <span>LinkedIn</span>
+            </a>
+        </div>
     </div>
 
-
-    <div class="Logos">
-        <a href="https://github.com/schao021" target="_blank">
-        <img src="Images/GithubLogo.png" alt="Github_Logo">
-        </a>
-        <a href="https://www.linkedin.com/in/simon-chao-8b4869223" target="_blank">
-            <img src="Images/LinkedInLogo.png" alt="LinkedIn_Logo">
-        </a>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
